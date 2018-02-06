@@ -1,0 +1,22 @@
+function [nos] = create_unique_lotto(lower, upper, number)
+
+nos = zeros(1,number);
+
+tot = 0;
+while total <= number
+    num = randi([lower upper],1,1);
+    if isempty(find(uvec == i)) 
+        uvec = [uvec i];
+    if 
+    
+end
+
+
+
+
+
+end
+
+
+
+
