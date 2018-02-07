@@ -3,10 +3,15 @@
 % Test script for the lotto numbers...
 
 clear;
-Max_QPs  = 10000;
+Max_QPs  = 10000000;
 Num_Nos = 6;
 Lower      = 1;
 Upper     = 36;
+
+% Actual probability of winning is based on (n!)/(r!)(n-r)!
+
+ProbWinning = 1/(factorial(Upper)/(factorial(Num_Nos)*factorial(Upper-Num_Nos)));
+
 
 Test = [7 16 21 27 30 31];
 %Test = [1 3 7 10];
