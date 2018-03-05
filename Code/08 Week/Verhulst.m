@@ -5,7 +5,7 @@ START = 0; END = 100;
 r = 0.15;
 K = 1000;
 
- [t,y] = ode45(f, [START END], 1,odeset,r,K);
+ [t,y] = ode45(@verhulst_model, [START END], 1,odeset,r,K);
 
  plot(t, y,'-o');
 
