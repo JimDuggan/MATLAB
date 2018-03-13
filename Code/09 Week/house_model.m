@@ -15,7 +15,7 @@ function [y] = house_model(t, x, k, l, Te, Tg, onFlags)
 % onFlags - switches for whether the heater is on or off
 
 
-y = [0;0];  % initialise output column vector
+y = [0  0];  % initialise output column vector
 
 k1 = k(1); k2 = k(2); k3 = k(3); % Cooling constants
 

@@ -1,12 +1,12 @@
-Te       = -2;      % temperature of the environment
+Te       = 35;      % temperature of the environment
 TaINIT  = 12;     % Initial temperature of the attic
 TrINIT  = 20;      % Initial temperature of the room
 l           = 0.75;  % heating constant
 Tg        = 22;     % Desired temperature
 
 k  = [0.05    ... % cooling from room to outside
-        0.07    ... % cooling from room to attic
-        0.80];      % cooling frm attic to outside
+        0.77    ... % cooling from room to attic
+        0.80];      % cooling from attic to outside
 
 % sample heating pattern for 24 hours
 heater_on = [0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 1 1 1 1 1 1 1 1 0];
