@@ -1,5 +1,5 @@
 
-C = readtable("data/AlbumSales.xlsx");
+C = readtable("AlbumSales.xlsx");
 
 scatter(C.adverts, C.sales);
 
