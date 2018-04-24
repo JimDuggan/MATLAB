@@ -1,12 +1,12 @@
 % Leslie matrix for customers in A, B and C
 
-L = [0.70 0.80 0.00;
-       0.25 0.10 0.00;
+L = [0.70 0.10 0.00;
+       0.25 0.80 0.00;
        0.05 0.10 1.00];
    
 check = sum(L); % should equal one for each column
 
-N = 50;
+N = 100;
 
 % adding in a matrix for the results
 
