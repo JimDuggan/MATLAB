@@ -1,5 +1,3 @@
-function [avg,stdev] = stats(x)
-  avg   = mean(x);
-  stdev = std(x);
-end
+function [a,b] = stats(x)
 
+end
