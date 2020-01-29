@@ -4,8 +4,10 @@ function rv = conv(m)
 % allocate space for row vector (more efficient)
     rv = zeros(1,nr*nc);
     
+    start = 1;
     for i = 1:nc
-        
+        rv(start:(start+nr-1)) = m(:,i);
+        start=start+nr;
     end
     
     
@@ -13,6 +15,5 @@ function rv = conv(m)
 %   - row by row would be ok too (row order)
 % copy column to successive elements of row vector
 
-rv = -99;
 end
 
